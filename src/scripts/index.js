@@ -10,7 +10,7 @@ function cardsFront(lista) {
         div_title.classList.add('section__card--title')
 
         let img = document.createElement('img')
-        img.src = "./assets/Group 1.png"
+        img.src = "./src/assets/Group 1.png"
         img.classList.add('icon-user')
 
         let div_title_2 = document.createElement('div')
@@ -59,7 +59,7 @@ function cardsBack(lista) {
         div_title.classList.add('section__card--title')
 
         let img = document.createElement('img')
-        img.src = "./assets/Group 1.png"
+        img.src = "./src/assets/Group 1.png"
         img.classList.add('icon-user')
 
         let div_title_2 = document.createElement('div')
