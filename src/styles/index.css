@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+    gap: 10px;
+
+    width: 100vw;
+    height: 100px;
+    
+
+    background-color: #212529;
+    color: #FFFFFF;
+
+    font-family: 'Inter', sans-serif;
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+header > div > h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+header > div > h1 > span{
+    color: #484FFB;
+}
+
+header > ul{
+    list-style: none;
+}
+
+header > ul > li{
+    padding: 10px 80px;
+
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+main{
+    background-color: #E9ECEF;
+    width: 100vw;
+}
+
+.main__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 30px 20px;
+    padding-left: 30px;
+    gap: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section__front-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: flex-start;
+    padding: 10px 22px;
+    gap: 12px;
+
+    overflow-x: auto;
+}
+
+.section__back-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: flex-start;
+    padding: 10px 22px;
+    gap: 12px;
+
+    overflow-x: auto;
+}
+
+.section__card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 32px 24px;
+    margin-right: 15px;
+    gap: 16px;
+    border-radius: 10px;
+
+    background-color: #FFFFFF;
+
+    width: 20rem;
+    height: 15rem;
+}
+
+.section__card--title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.section__card--title > div {
+    gap: 10px;
+    color: #212529;
+
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.section__card--title > div > span {
+    color: #495057;
+    font-weight: normal
+}
+
+.description {
+    color: #495057;
+
+    font-size: 14px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.section__card--specs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+}
+
+.section__card--specs > span {
+    color: #4D52D3;
+    background-color: #4d51d31f;
+
+    padding: 5px;
+
+    font-size: 14px;
+}
+
+@media (min-width: 769px){
+    header{
+        position: fixed;
+        padding: 40px 0px;
+    }
+
+    header > ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    header > ul > li{
+        padding: 10px 25px;
+    }
+
+    main{
+        padding-top: 200px;
+
+    }
+
+    .section__front-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section__back-cards{
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+
+    .section__card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 32px 24px;
+        margin-right: 15px;
+        gap: 16px;
+        border-radius: 10px;
+    
+        background-color: #FFFFFF;
+    
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .main__title{
+        padding-left: 8rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .main__title{
+        padding-left: 9rem;
+    }
+}
+
+@media (min-width: 1080px){
+    .main__title{
+        padding-left: 11.5rem;
+    }
+}
